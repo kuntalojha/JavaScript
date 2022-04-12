@@ -11,14 +11,16 @@ console.log(myAge);
 
 let Age = 25;
 let temp = -25;
-let price = 50.5;
+let price = 50.50;
 
+console.log(Age,temp,price);
+console.log();
 console.log(Age);
 console.log(temp);
 console.log(price);
 
 // 2. String
-let name = 'Kuntal'; // or let name = 'Kuntal';
+let name = 'Kuntal'; // or let name = "Kuntal";
 
 // Boolean
 // true / false
@@ -53,7 +55,9 @@ console.log(numbers);
   //  1.2 Arrays
   // Collection of values
    const Array = [2,3,4,'JavaScript','Python',{name:'Kuntal'}];
-
+   let Array1  = [2,3,4,'JavaScript','Python',{name:'Kuntal'}];
+   var Array2  = [2,3,4,'JavaScript','Python',{name:'Kuntal',title:'Ojha'},'Look at me my love'];
+   console.log(Array[0],Array1[4],Array2[5].name,Array2[6],Array2[5].title);
 console.log(Array);
   //  1.3 Maps
   //  1.4 Set
