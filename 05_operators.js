@@ -115,6 +115,47 @@ if(userRole ==='admin'){
 
 userRole === 'admin' ? console.log('You are an admin') :  console.log('You are not an admin');
 
+// Comparison Operation
+
+// Equal (==)
+console.log(4==4); // true
+console.log(4=='4'); // true // Coercion work
+// Not Equal(!=)
+console.log(4!=4); // fakse
+console.log(4!='4'); // false // Coercion work
+console.log();
+// Strict equal (===)
+console.log(4===4); // true
+console.log(4==='4'); // false
+console.log();
+// Strict not equal (!===)
+console.log(4!==4); // false
+console.log(4!=='4'); // true
+// Greater than (>)
+console.log(5>5); // false
+// Greater than or equal (>=)
+console.log(5>=5); // true
+// Less than (<)
+console.log(6<6); // false
+// Less than or equal (<=)
+console.log(6<=6); // true
+// Coercion
+
+console.log(3+10*2);
+
+console.log((3+10)*2);
+
+console.log(3>2 && 2>1); // true
+console.log(true && true); // true
+console.log(3>2>1); // 3>2 = true
+console.log(true>1); // false
+console.log(1>1); // false
+
+// Operators Operator Precedence Document link
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+
+
 
 
 
