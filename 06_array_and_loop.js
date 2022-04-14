@@ -106,8 +106,151 @@ const faileudents = students.filter((student) => {
     return 0;
   }
 });
+// or we can use like this
 
 console.log(faileudents);
 
+const failed = students.filter((a) => {
+  return a.marks > 45;
+});
 
-console.log('KUNTAL OJHA');
+// or we can also do like this
+
+const failed1 = students.filter((b) => b.marks > 45);
+
+
+// Map
+
+const user = [{
+    firstName: 'Maya',
+    lastName: 'Ojha'
+  },
+  {
+    firstName: 'Kuntal',
+    lastName: 'Ojha'
+  },
+  {
+    firstName: 'Amulya',
+    lastName: 'Ojha'
+  }
+];
+
+const finalUsers = user.map((user) => {
+  return {
+    fullName: user.firstName + ' ' + user.lastName
+  };
+});
+
+console.log(user);
+console.log(finalUsers);
+// Or Uw can ue this alos
+
+const final_users = user.map((user) => {
+  return {
+    full_name: `${user.firstName} ${user.lastName}`
+  };
+});
+
+console.log(final_users);
+
+// Reduce
+const movies = [{
+    name: 'Pushpa',
+    budget: 10000
+  },
+  {
+    name: 'KGF2',
+    budget: 20000
+  },
+  {
+    name: 'Social',
+    budget: 200
+  },
+  {
+    name: 'Matrix',
+    budget: 1050
+  }
+];
+
+let total = 0;
+movies.forEach((item) => {
+  total = total + item.budget;
+});
+
+console.log(total);
+
+// Or we can use this alos
+// Ue reduce finction
+
+const newTotal = movies.reduce((acc, movies) => {
+  acc = acc + movies.budget;
+  return acc;
+}, 0);
+
+console.log(newTotal);
+
+// Index of
+
+const admins = [2, 1, 5];
+
+const userid = {
+  name: 'XYZ',
+  id: 5
+}
+
+let us = admins.indexOf(userid.id);
+console.log(us);
+// Or we also ca do like this
+console.log(admins.indexOf(userid.id));
+
+//  includes
+
+console.log(admins.includes(userid.id));
+
+// find
+
+const userId = [{
+    name: 'xyz',
+    Id: 1
+  },
+  {
+    name: 'abc',
+    Id: 2
+  },
+  {
+    name: 'pqr',
+    Id: 3
+  }
+];
+
+
+const myUser = userId.find((user) => {
+  if (user.Id === 2) {
+    return 1;
+  }
+  return 0;
+});
+
+console.log(myUser);
+
+// OR we also ca do this things
+
+
+const myUsers = userId.find((user) => {
+  return user.name === 'pqr';
+});
+
+console.log(myUsers);
+
+
+// sort
+
+const userNames = ['John', 'jane', 'Ram', 'Sameer', 'Mansi'];
+userNames.sort();
+console.log(userNames);
+
+// splice
+
+const userName = ['John', 'jane', 'Ram', 'Sameer', 'Mansi'];
+userName.splice(2, 1);
+console.log(userName);
